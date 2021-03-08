@@ -1,0 +1,86 @@
+import java.util.*;
+
+public class Command4 {
+	public static void main(String[] args) {
+		int[] input = new int[args.length];
+		for(int i=0;i<args.length;i++) input[i] = Integer.valueOf(args[i]);
+		ArrayList<Integer> answers = new ArrayList<Integer>();
+		
+		e1
+		
+		printList(answers);	
+	}
+		
+	public static void printList(List list) {
+		for(int i=0;i<list.size();i++) {
+			System.out.print(list.get(i));
+			if (i<list.size()-1) System.out.print(" ");
+		}
+	}
+}
+
+e1:
+e2 // single output
+e3 // multiple outputs
+
+
+e2: // single output
+e21 // output = one element among inputs
+e22 // output = f(inputs), e.g., add even #s
+
+e21: // output = one element among inputs
+answers.add(input[0]); for(int i=0;i<input.length;i++) { if ( e200 ) answers.set(0, input[i]); } 
+
+e22: // output = f(inputs)
+answers.add(0); for(int i=0;i<input.length;i++) { if ( e200 ) answers.set(0, e221 ); } 
+
+e221: // manipualte one output
+answers.get(0) + input[i]	// sum all inputs that meet specified condition
+answers.get(0) + 1	// count # of times event occurred
+answers.get(0) | 1	// determine whether event occurred (1) or not (0)
+
+e200:
+true
+e101 e102 e103
+
+
+e3: // multiple outputs
+e31
+e32
+
+e31: // multiple outputs = subset of inputs
+for(int i=0;i<input.length;i++) { if ( e300 ) answers.add(input[i]); }
+
+e32: // output(i) = f(input(i))
+for(int i=0;i<input.length;i++) { if ( e300 ) answers.add( e321 ); else answers.add(input[i]); }
+
+e321: // modify input before storing
+-input[i]
+input[i] + e502
+
+e300:
+true
+e101 e102 e501 // use e501 rather than e103, as answers list could be empty
+
+
+e101:
+input[i]		// use input as it is
+input[i] % e502	// modify input before conditioning
+
+e102:
+>
+==
+<
+
+e103:
+answers.get(0)
+e501
+
+
+e501: // constants that are frequently used (include 0)
+0
+e502
+
+e502: // constants that are frequently used (exclude 0)
+2
+3

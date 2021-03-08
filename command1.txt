@@ -1,0 +1,13 @@
+for(int i=0;i<=n;i++) {
+	if ( e1 e2 e1 ) then answer = input[i];
+}
+
+e1:
+answer
+input[i]
+e1 + 1 
+
+e2:
+>
+==
+<

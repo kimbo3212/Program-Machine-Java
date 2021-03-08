@@ -1,0 +1,1 @@
+public class Command4 { public static void main(String[] args) { int[] input = new int[args.length]; for(int i=0;i<args.length;i++) input[i] = Integer.valueOf(args[i]); int answer = input[0]; for(int i=0;i<input.length;i++) { if ( input[i] < input[i] ) answer = input[i]; } System.out.println(answer); } }
